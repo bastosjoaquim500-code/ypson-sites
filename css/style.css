@@ -296,6 +296,8 @@ header .btn{
    transform: translateY(0);
    opacity: 1;
    visibility: visible;
+      color: rgba(0, 0, 0,0.2);;
+
 }
 #news .container .content .box1{
    color: #b48c56;
