@@ -1,56 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script id="aclib" type="text/javascript" src="//acscdn.com/script/aclib.js"></script>
+    <link	href="imagen/logotipo.png"	rel="icon">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hotel e ospedaria</title>
-
-<!-- Meta tag de verificação AdCash -->
-  <meta name="adcash-verification" content="<script type="text/javascript">
-    aclib.runAutoTag({
-        zoneId: 'k5qo8au1yo',
-    });
-</script>
-">
-
     <link rel="stylesheet" href="css/style.css">    
 </head>
-<body><body style="clear:both; padding-left:10px; padding-top:5px; padding-right:5px; padding-bottom:5px">
-    <a name="Hotel e ospedaria"></a>
-    <a name="Hotel e ospedaria"></a>
-    
+<body>
+    <div id="resultado">
+        <div class="modal-content">
+            <span class="close" >&times;</span>
+            <div id="modal-texto"></div>
+        </div>
+    </div>
        
     <header>
+        <button id="btnMenu" class="menu-btn">☰</button>
         <div id="box">
-            <h1><abb title="Ypson">Y</abb></h1>
+            <h1>&Yopf;</h1>
          </div>
        
-         <h4>Angola</h4>
-    
-         
-        <div class="menu">
-            
+
+        <div class="menu-desketop">
             <ul>
-                <li><a href="index.html">shows</a> </li>
-                <li><abbr title="Pontus Turisticos"><a href="Pontus Turisticos.html">Pontus Turisticos</a></abbr></li>
-                <button>Hotel e hospedaria</button>
-                <li><a href="publicação.html">Publicações</a></li>
+                <li><a href="início.html">Home</a></li>
+                <li><a href="index.html">Shows</a> </li>
+                <li><a href="Pontus Turisticos.html">Turismo</a></li>
+                <li><a href="" id="ep">Hotéis</a></li>
+                <li><a href="publicação.html">Entrar</a></li>
             </ul>
         </div>
-        <div class="menu-mobile">
+         <nav id="menu" class="menu">
+            <input type="button" value="☰" class="submenu-btn" onclick="submenu()">
             <ul>
-                <li><abbr title="shows" ><a href="index.html">shows</a></abbr></li>
-                <li><abbr title="Pontus Turisticos"><a href="Pontus Turisticos.html">Pontus Turisticos</a></abbr></li>
-                <li><abbr title="Hotel e ospedaria" ><button>Hotel e hospedaria </button> </abbr></li>
-                <li><abbr title="Publicações" ><a href="publicação.html">Publicações</a></abbr></li>
-             
+                <li><a href="início.html">Home</a></li>
+                <li><a href="index.html">Shows</a> </li>
+                <li><a href="Pontus Turisticos.html">Turismo</a></li>
+                <li><a href="" id="ep">Hotéis</a></li>
+                <li><a href="publicação.html">Entrar</a></li>
             </ul>
-        </div>
-        <div class="btn"><ion-icon name="grid-outline">☰</ion-icon> </div>
+        </nav>
+      <h4>ao</h4>
     </header>
-       
+       <div id="awn-z10736098"></div>
  <!--      News       -->
  <div id="navigation" >
     <section id="news">
@@ -66,9 +60,9 @@
                     <h3>
                         Matias Damasio. <br>
                         <img src="imagen/Matias Damasio.jpg" ><br>
-                        Representando Angola em portugal e em muitos outros países lusófonos...
+                        Representando Angola em portugal e em muitos outros países lus&oacute;fonos...
                     </h3>
-                    <button>Ver mais</button>
+                    <button id="prim">Ver mais</button>
                 </div><div class="box"><h1></h1>
                     <p>Pontos Turisticos</p>
                     <h3>
@@ -77,7 +71,7 @@
                         conciderado um dos melhores pontu turistico de Angola, e tem atraido muitos turístas...</h3>
                     <h1></h1>
                     
-                    <button>Ver mais</button>
+                    <button id="segu">Ver mais</button>
                 </div>
                 <div class="box">
                     <p>Hotel e hospedaria </p>
@@ -88,111 +82,33 @@
                         conciderado um hotel cinco estrelas...</h3>
                     <h1></h1>
                     
-                    <button>Ver mais</button>
+                    <button id="terc">Ver mais</button>
                 </div>
-                
-                <div id="awn-z10736098"></div>
             </div>
         </div>
       </section>
     </div>
-                <section id="right">
-                    <h1>Luanda</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis tenetur
-                         deleniti fugit dolores, error tempore. Ipsam, adipisci unde totam officiis numquam quidem.
-                          Ea expedita architecto, similique iusto nostrum exercitationem consectetur?</p>
-                          
-                <table>
-                    <tr>
-                        <th><figure class="foto-legenda">
-                    
-                    <img src="imagen/hotel baia.jpg" alt="">
-                    <figcaption>
-                        <h3> Hotel Baia &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>
-                        <p>Luanda-ANGOLA</p>
-                    </figcaption>
-                   
-                </figure></th>
-                        <th><figure class="foto-legenda">
-                    
-                    <img src="imagen/hotel diamante.jpg" alt="">
-                    <figcaption>
-                        <h3>Hotel Diamante</h3>
-                        <p>Luanda-ANGOLA</p>
-                    </figcaption>
-                   
-                </figure></th>
-                        <th><figure class="foto-legenda">
-                    
-                    <img src="imagen/hotel-hesperia-valencia.jpg" alt="">
-                    <figcaption>
-                        <h3>&nbsp;&nbsp;&nbsp;&nbsp;Hesperia Valencia</h3>
-                        <p>Luanda-ANGOLA</p>
-                    </figcaption>
-                   
-                </figure>
-                    </tr>
-                    <tr>
-                        </th>
-                        <th><figure class="foto-legenda">
-                    
-                    <img src="imagen/hotel-intercontinental.jpg" width="181px" >
-                    <figcaption>
-                        <h3> Intercontinental</h3>
-                        <p>Luanda-ANGOLA</p>
-                    </figcaption>
-                   
-                </figure>
-            </th>
-                </th>
-                        <th><figure class="foto-legenda">
-                    
-                    <img src="imagen/hotel-palmeiras.jpg" alt="">
-                    <figcaption>
-                        <h3>hotel Palmeiras</h3>
-                        <p>Luanda-ANGOLA</p>
-                    </figcaption>
-                   
-                </figure>
-            </th></th>
-                        <th><figure class="foto-legenda">
-                    
-                    <img src="imagen/hotel-epic-sana.jpg" >
-                    <figcaption>
-                        <h3>Hotel Epic Sana</h3>
-                        <p>Luanda-ANGOLA</p>
-                        <h5>✨✨✨✨✨</h5>
-                    </figcaption>
-                   
-                </figure>
-            </th>
-                    </tr>
-                </table>
+                <section id="right">   
+<section id="corpo-full">
+    <article id="noticia-principal">
+    <h1>Hotéis</h1>
+
+<p>Estes s&atilde;o os hotes e hospedaria de Angola, to podes ver os detalhes destes hoteis e hospedaria decidir qual to 
+    queres ficar, utilisa esta página para isto. </p>
+<ul id="album-fotos">
+<li id="foto01"><span>ver detalhes</span></li>
+<li id="foto02"><span>ver detalhes</span>
+<li id="foto03"><span>ver detalhes</span>
+<li id="foto04"><span>ver detalhes</span>
+<li id="foto05"><span>ver detalhes</span>
+<li id="foto06"><span>ver detalhes</span>
+</ul>
+</article>
+</section>
                 </section>
            
-           <script type="text/javascript">
-    aclib.runAutoTag({
-        zoneId: 'r8va5xia8m',
-    });
-</script>
-
     <script src="js/script.js"></script>
     
 </script>
-<script>
-fetch("http://localhost:3000/visita")
-  .catch(() => {});
-</script>
-<script data-cfasync="false" type="text/javascript">
-    var adcashMacros = {};
-    var zoneNativeSett={container:"awn",baseUrl:"onclickalgo.com/script/native.php",r:[10736026,10736034,10736036,10736048,10736052,10736056,10736062,10736082,10736084,10736098]};
-    var urls={cdnUrls:["//superonclick.com","//geniusonclick.com"],cdnIndex:0,rand:Math.random(),events:["click","mousedown","touchstart"],useFixer:!0,onlyFixer:!1,fixerBeneath:!1};function acPrefetch(e){var t,n=document.createElement("link");t=void 0!==document.head?document.head:document.getElementsByTagName("head")[0],n.rel="dns-prefetch",n.href=e,t.appendChild(n);var r=document.createElement("link");r.rel="preconnect",r.href=e,t.appendChild(r)}var nativeInit=new function(){var a="",i=Math.floor(1e12*Math.random()),o=Math.floor(1e12*Math.random()),t=window.location.protocol,c={_0:"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=",encode:function(e){for(var t,n,r,a,i,o,c="",s=0;s<e.length;)a=(t=e.charCodeAt(s++))>>2,t=(3&t)<<4|(n=e.charCodeAt(s++))>>4,i=(15&n)<<2|(r=e.charCodeAt(s++))>>6,o=63&r,isNaN(n)?i=o=64:isNaN(r)&&(o=64),c=c+this._0.charAt(a)+this._0.charAt(t)+this._0.charAt(i)+this._0.charAt(o);return c}};this.init=function(){e()};var e=function(){var e=document.createElement("script");e.setAttribute("data-cfasync",!1),e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js",e.onerror=function(){!0,r(),n()},e.onload=function(){nativeForPublishers.init()},nativeForPublishers.attachScript(e)},n=function(){""!==a?s(i,t):setTimeout(n,250)},r=function(){var t=new(window.RTCPeerConnection||window.mozRTCPeerConnection||window.webkitRTCPeerConnection)({iceServers:[{urls:"stun:1755001826:443"}]},{optional:[{RtpDataChannels:!0}]});t.onicecandidate=function(e){!e.candidate||e.candidate&&-1==e.candidate.candidate.indexOf("srflx")||!(e=/([0-9]{1,3}(\.[0-9]{1,3}){3}|[a-f0-9]{1,4}(:[a-f0-9]{1,4}){7})/.exec(e.candidate.candidate)[1])||e.match(/^(192\.168\.|169\.254\.|10\.|172\.(1[6-9]|2\d|3[01]))/)||e.match(/^[a-f0-9]{1,4}(:[a-f0-9]{1,4}){7}$/)||(a=e)},t.createDataChannel(""),t.createOffer(function(e){t.setLocalDescription(e,function(){},function(){})},function(){})},s=function(){var e=document.createElement("script");e.setAttribute("data-cfasync",!1),e.src=t+"//"+a+"/"+c.encode(i+"/"+(i+5))+".js",e.onload=function(){for(var e in zoneNativeSett.r)d(zoneNativeSett.r[e])},nativeForPublishers.attachScript(e)},d=function(e){var t="jsonp"+Math.round(1000001*Math.random()),n=[i,parseInt(e)+i,o,"callback="+t],r="http://"+a+"/"+c.encode(n.join("/"));new native_request(r,e,t).jsonp()}},nativeForPublishers=new function(){var n=this,e=Math.random();n.getRand=function(){return e},this.getNativeRender=function(){if(!n.nativeRenderLoaded){var e=document.createElement("script");e.setAttribute("data-cfasync","false"),e.src=urls.cdnUrls[urls.cdnIndex]+"/script/native_render.js",e.onerror=function(){throw new Error("cdnerr")},e.onload=function(){n.nativeRenderLoaded=!0},n.attachScript(e)}},this.getNativeResponse=function(){if(!n.nativeResponseLoaded){var e=document.createElement("script");e.setAttribute("data-cfasync","false"),e.src=urls.cdnUrls[urls.cdnIndex]+"/script/native_server.js",e.onerror=function(){throw new Error("cdnerr")},e.onload=function(){n.nativeResponseLoaded=!0},n.attachScript(e)}},this.attachScript=function(e){var t;void 0!==document.scripts&&(t=document.scripts[0]),void 0===t&&(t=document.getElementsByTagName("script")[0]),t.parentNode.insertBefore(e,t)},this.fetchCdnScripts=function(){if(urls.cdnIndex<urls.cdnUrls.length)try{n.getNativeRender(),n.getNativeResponse()}catch(e){urls.cdnIndex++,n.fetchCdnScripts()}},this.scriptsLoaded=function(){if(n.nativeResponseLoaded&&n.nativeRenderLoaded){var e=[];for(zone in zoneNativeSett.r)document.getElementById(zoneNativeSett.container+"-z"+zoneNativeSett.r[zone])&&(e[zoneNativeSett.r[zone]]=new native_request("//"+zoneNativeSett.baseUrl+"?nwpsv=1&",zoneNativeSett.r[zone]),e[zoneNativeSett.r[zone]].build());for(var t in e)e[t].jsonp("callback",(e[t],function(e,t){setupAd(zoneNativeSett.container+"-z"+t,e)}))}else setTimeout(n.scriptsLoaded,250)},this.init=function(){var e;if(n.insertBotTrapLink(),0===window.location.href.indexOf("file://"))for(e=0;e<urls.cdnUrls.length;e++)0===urls.cdnUrls[e].indexOf("//")&&(urls.cdnUrls[e]="http:"+urls.cdnUrls[e]);for(e=0;e<urls.cdnUrls.length;e++)acPrefetch(urls.cdnUrls[e]);n.fetchCdnScripts(),n.scriptsLoaded()},this.insertBotTrapLink=function(){var e=document.createElement("a");e.href=window.location.protocol+"//onclickalgo.com/al/visit.php?al=1,4",e.style.display="none",e.style.visibility="hidden",e.style.position="relative",e.style.left="-1000px",e.style.top="-1000px",e.style.color="#fff",e.link='<a href="http://onclickalgo.com/al/visit.php?al=1,5"></a>',e.innerHTML="",document.body.appendChild(e)}};nativeInit.init();
-</script>
-<a href="https://onclickalgo.com/al/visit.php?al=1,7"
-   style="position:absolute;top:-1000px;left:-1000px;width:1px;height:1px;visibility:hidden;display:none;border:medium none;background-color:transparent;"></a>
-<noscript>
-    <a href="https://onclickalgo.com/al/visit.php?al=1,6"
-       style="position:absolute;top:-1000px;left:-1000px;width:1px;height:1px;visibility:hidden;display:none;border:medium none;background-color:transparent;"></a>
-</noscript>
 </body>
 </html>

@@ -1,55 +1,52 @@
-//iniciar todas as validações de todos os campos
-    validate(form){
+const btnMenu = document.getElementById("btnMenu")
+const menu = document.getElementById("menu")
+window.onclick = e => { if (e.target == menu) menu.style.display = "none"; };
 
-        //pega os inputs
-        let inputs = form.getElementByIdTagName('input');
+btnMenu.addEventListener('click', butt)
 
+function butt(){
+  menu.style.display = 'block'
+}
+function submenu(){
+  menu.style.display = 'none'
+}
 
-        //HTMLCollection  
-        let imputsArray = [...inputs];
+let primeiro = document.getElementById("prim")
+let segundo = document.getElementById("segu")
+let terceiro = document.getElementById("terc")
+let res = document.getElementById("resultado")
+let moda_contente = document.getElementById("modal-content")
+let fechar = document.querySelector(".close");
+let moda_texto = document.getElementById("modal-texto")
+fechar.onclick = () => { res.style.display = "none"; };
+window.onclick = e => { if (e.target == res) res.style.display = "none"; };
 
-        //loop nos inputs e validações meadiante oa que for encontrado
-      inputsArray.forEach(function(input){
-       
+primeiro.addEventListener('click', priclick)
+segundo.addEventListener('click', suclick)
+terceiro.addEventListener('click', teclck)
 
-        //loop em todos as validacoes existentes
-        for(let i = 0; this.validations.length > i; i++){
-            //verfica se a validação actual existe no input
-            if(input.getAtribute(this.validations[i]) |=null){
+function priclick(){
+  res.style.display = 'block'
+  moda_texto.innerHTML = `<h3>
+                        Matias Damasio. <br>
+                        <img src="imagen/Matias Damasio.jpg" ><br>
+                        Representando Angola em portugal e em muitos outros países lus&oacute;fonos...
+                    </h3>`
+  
+}
 
-                //limpando a string para virar um método
-                let method = this.validations[i].replace('data-','').replace('-','-');
-                //valor do input
-                let value - input.getAttribute(this.validations[i]);
-                //invocar o método
-                this[method](input, value);
-            }
-        }
+function suclick(){
+  res.style.display = 'block'
+  moda_texto.innerHTML = `<h3>
+                       Serra da leba.<br> 
+                        <img src="imagen/montanha-serra-da-leba-Lubango-252.jpg" width="144px" height="147"><br>
+                        conciderado um dos melhores pontus turistico de Angola...</h3>`
+}
 
-      }, this);
-    }
-
-    //verfica se um input tem número minimo de caracteres
-    minlength(input, minValue){
-        let inputLenght = input.value.length;
-
-        let errorMessage = 'o campo precisa ter pelo menos ${minValue} caracteres';
-        if(inputLenght < minValue){
-            this.printMessager(input, errorMessage);
-        }
-    }
-    // metodos para inprimir menssagens de erro na tela
-    printMessager(input, msg){
-        let template = document.querySelector('.error-validation').cloneMode(true);
-
-        template.textcontent = msg;
-
-        let inputParent = input.parentNode;
-
-        template.classList.remover('template');
-        inputParent.appendChild(template);
-    }
-    $('.btn').click(function(){
-        $('.menu-mobile').slideToggle('show')
-    })
-//funões que permite alterar data no
+function teclck(){
+  res.style.display = 'block'
+  moda_texto.innerHTML = `<h3>
+                        hotel-epic-sana<br> 
+                        <img src="imagen/hotel-epic-sana.jpg" alt=""><br>
+                        conciderado um hotel cinco estrelas...</h3>`
+}
