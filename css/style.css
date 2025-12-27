@@ -48,18 +48,13 @@ header h1{
   width: 48px;
   height: 28px;
   cursor: context-menu;
- 
 }
-
 header .menu ul abbr{
   text-decoration: none;
-
 }
 header .menu ul{
   display: flex;
   list-style-type: none;
-  
-  
 }
 header .menu ul li{
    list-style: none;
@@ -78,7 +73,7 @@ header .menu ul li a{
 header .menu ul button {
   background-color: green;
   border: 2px solid green;
-  padding: 35px 27px;
+  padding: 35px 7px;
   font-size: 1.1rem;
   color: #b48c56;
   cursor: pointer;
@@ -103,7 +98,7 @@ header .navigation{
    top: 0;
    right: 0;
 }
-header .menu-mobile ul li a{
+header .menu-mobile{
   color: black;
   text-decoration: underline;
 }
@@ -242,7 +237,7 @@ header .btn{
    font-weight: 200;
    letter-spacing: 20;
    margin-top: 0px;
-   margin-bottom: 30px;
+   margin-bottom: 50px;
    background: rgba(48, 39, 37, 0.9);
    padding: 5px 20px;
    color: rgba(255, 255, 255, 0.5);
@@ -259,6 +254,7 @@ header .btn{
 }
 #news .container .content .box img{
    width: 60%;
+   height: 151px;
    text-align: center;
 }
 #news .container .content .box h1{
@@ -272,7 +268,7 @@ header .btn{
 #news .container .content .box:hover h1{
    color: rgba(0, 0, 0,0.2);;
 }
-#news .container .content .box p{
+ #news .container .content .box p{
    font-family: 'Times New Roman', Times, serif;
    font-size: 1.1rem;
    font-weight: 60;
@@ -281,7 +277,7 @@ header .btn{
    margin-top: 330px;
 }
 #news .container .content .box:hover p{
-  margin-top: 80px;
+  margin-top: 10px;
 }
 #news .container .content .box button{
    padding: 10px 20px;
@@ -289,7 +285,7 @@ header .btn{
    background: 0 0 15px rgba(0, 0, 0,0.2);
    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
    font-size: 1.2rem;
-   margin-top: 0%;
+   margin-top: -10%;
    transform: translateY(-40px);
    opacity: 700;
    visibility: hidden;
@@ -300,6 +296,16 @@ header .btn{
    transform: translateY(0);
    opacity: 1;
    visibility: visible;
+}
+#news .container .content .box1{
+   color: #b48c56;
+   position: sticky;
+   top: 515px;
+   position: absolute;
+   text-decoration: #b48c56;
+}
+#news .container .content .box1 a{
+   color: #b48c56;
 }
 /*    BRANCH     */
 
@@ -622,21 +628,78 @@ text-decoration: none;
    visibility: visible;
 }
 
-/* formação de imagens com legenda Hotel e ospedaria*/
+/* ---------formação de imagens com legenda          Hotel e ospedaria*/
 figure.foto-legenda{
-   border: 8px solid white;
+   border: 4px solid white;
    box-shadow: 1px 1px 4px black;
    height: 70%;
-
+   background-color: white;
+   margin: 14px;
 }
 figure.foto-legenda img{
-   width: 100%;
-   height: 10%;
+   width: 200px;
+   height: 201px;
 }
-table{
+figure.foto-legenda h3{
+   font-size: 1.10rem;
+   margin-left: -77px;
+   color: #cc9752;
+}
+figure.foto-legenda p{
+   font-size: 0.1rem;
+   margin-left: -30px;
+font-family: 'Courier New', Courier, monospace;
+}
+#right table{
    margin: 41px;
 }
-   /*                                             main-container       publicação                             */
+/* ---------formação de imagens com legenda --------pontus turisticos------*/
+figure.fotografia-legenda{
+   position: relative;
+   border: 8px solid white;
+   box-shadow: 1px 1px 4px black;
+   margin: -40px 4px -64px 14px;
+}
+figure.fotografia-legenda img{
+   width: 255px;
+}
+figure.fotografia-legenda figcaption{
+   left: 167px;
+   margin-top: 179px;
+   opacity: 0;
+   position: absolute;
+   top: 0px;
+   background-color: rgba(0, 0, 0, 0.4);
+   color: white;
+   transition: opacity 1s;
+}
+figure.fotografia-legenda:hover figcaption{
+   opacity: 1;
+
+}
+ /*-----------------------publicação---------------*/
+ main #right p{
+  margin: -10px;
+  padding: 4px;
+  box-sizing: inherit;
+ -moz-box-direction: reverse;
+ }
+#right .box h1 {
+   margin: -101px;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 1.6rem; /* adpatada ao elemanto root */
+    font-size: 1.8rem;
+    color: #b9833c;
+    border: 8px solid #b9833c;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 14%;
+    text-align: center;
+    width: 48px;
+    height: 28px;
+    cursor: context-menu;
+}
+   /*-------------------main-container-------publicação-------------------*/
 #main-container {
    background: #f0f8ff;
     top: 60px; 
@@ -661,20 +724,6 @@ table{
     background: #f0f8ff;
     margin: 1px 0 0 1px;
 }
-#right .box h1 {
-    text-align: center;
-    margin-bottom: 25px;
-    font-size: 1.6rem; /* adpatada ao elemanto root */
-    font-size: 1.8rem;
-    color: #b9833c;
-    border: 8px solid #b9833c;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    border-radius: 14%;
-    text-align: center;
-    width: 48px;
-    height: 28px;
-    cursor: context-menu;
-} 
 
 form {
     display: flex;
@@ -753,8 +802,6 @@ form {
    border: 1px solid #588129;
    color: white;
    font-size: 0.8em;
-   font-weight: bold;
-   padding: 5px 10px;
    }
    .owl-dot{
       width: 15px;
@@ -862,11 +909,11 @@ header .menu-mobile ul li a{
   transition: all 0.3s ease;
 }
 /*as cores*/
-
 header .menu-mobile ul li a:hover{
-  color: #f2d2a3;
-  border: 14px #302725 solid;
-  background-color: #432b07;
+   border-bottom: 14px;
+    transform: scale(1.1);
+    transform: rotateX('angle');
+    text-decoration: 11px underline #b48c56; /*A linha nas letras do cabeçalio*/
 }
 header .btn{
   display: block;
@@ -878,6 +925,26 @@ header .btn ion-icon{
   color: #ddb06e;
   font-size: 1.5rem;
   cursor: pointer;
+}
+header .menu-mobile .btn{
+   padding: 10px 20px;
+   border: none;
+   background: #deb887;
+   color: #000;
+   font-family: 'Courier New', Courier, monospace;
+   font-size: 1.2rem;   
+   transform: translateY(-40px);
+   opacity: 0;
+   visibility: hidden;
+   transition: all 0.5s ease;
+   cursor: pointer;
+   overflow: hidden;
+}
+header .btn:hover .menu-mobile{
+   top: 0;
+   transform: translateY(0);
+   opacity: 1;
+   visibility: visible;
 }
 }
 .names {
