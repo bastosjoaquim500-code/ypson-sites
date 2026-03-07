@@ -1,3 +1,4 @@
+
 const btnMenu = document.getElementById("btnMenu")
 const menu = document.getElementById("menu")
 window.onclick = e => { if (e.target == menu) menu.style.display = "none"; };
@@ -50,3 +51,40 @@ function teclck(){
                         <img src="imagen/hotel-epic-sana.jpg" alt=""><br>
                         conciderado um hotel cinco estrelas...</h3>`
 }
+
+
+function processar(){
+    var txt = window.document.getElementById("resresul")
+    var res = window.document.getElementById("resultados")
+    var provin = String(txt.value)
+      switch (provin) {
+        case 'Luanda':
+            res.innerHTML = '<p>Luanda</p>'
+            break;
+      case 'Huambo':
+            res.innerHTML = '<p>Huambo</p>'
+            break;
+        case 'Benguela':
+            res.innerHTML = '<p>Benguela</p>'
+            break;
+        case 'Cuanza-sul':
+            res.innerHTML = '<p>Cuanza-sul</p>'
+            break;
+        case 'Bié':
+            res.innerHTML = '<p>Bi&eacute;</p>'
+            break;
+        case 'Cabinda':
+            res.innerHTML = '<p>Cabinda</p>'
+            break;
+        case 'Cuando Cubango':
+            res.innerHTML = '<p>Cuando Cubango</p>'
+            break;
+        case 'Namibe':
+            res.innerHTML = '<p>Namibe</p>'
+            break;
+        default:
+            res.innerHTML = '<p>Noa encontrado</p>'
+            break;
+      }
+    
+  }

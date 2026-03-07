@@ -10,6 +10,63 @@ body {
   background-size: cover;
   background-position: 150px;
 }
+
+header{
+  top: 0px;
+  max-width: 1680px; 
+  width: 100%;
+  height: 60px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: #504f4f;
+   position: fixed;
+}
+header h4{
+  background-color: #888888;
+  text-align: center;
+  text-shadow: none;
+  color: rgb(83, 72, 70);
+  border-radius: 4px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.8rem;
+  height: 34px;
+  width: 147px;
+  cursor: pointer;
+}
+
+header h1{
+  font-size: 1.8rem;
+  color: #b9833c;
+  border: 8px solid #b9833c;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border-radius: 14%;
+  text-align: center;
+  width: 48px;
+  height: 28px;
+  cursor: context-menu;
+}
+
+header .navigation{
+   display: none;
+}
+header .navigation{
+   display: block;
+   width: 25px;
+   height: 100vh;
+   background: rgba(0, 0, 0, 00.9rem);
+   position: fixed;
+   top: 0;
+   right: 0;
+}
+header .menu-mobile{
+  color: black;
+  text-decoration: underline;
+}
+header .btn{
+  display: none;
+}
 #right{
        position: absolute;
        left: 329px; 
@@ -98,7 +155,6 @@ header .menu-desketop ul li a{
   float: left;
   padding: 34px 15px;
 }
-
 #ep {
   color:  #b48c56;
    
@@ -130,6 +186,11 @@ header .navigation{
 
 header .menu{
   display: none;
+  }
+#news .container .content .box img{
+   width: 60%;
+   height: 151px;
+   text-align: center;
 }
 header .menu-btn{
    display: none;
@@ -141,7 +202,6 @@ nav a {
     margin-right: 10px;
     text-decoration: none;
 }
-
 .post, .anuncio {
     background: white;
     padding: 10px;
@@ -159,9 +219,44 @@ nav a {
     border-radius: 5px;
     cursor: pointer;
 }
+ #news .container .content .box p{
+   font-family: 'Times New Roman', Times, serif;
+   font-size: 1.1rem;
+   font-weight: 60;
+   color: #b48c56;
+   letter-spacing: 3px;
+   margin-top: 330px;
+}
+#news .container .content .box:hover p{
+  margin-top: 10px;
+}
+#news .container .content .box button{
+   padding: 10px 20px;
+   border: none;
+   background: 0 0 15px rgba(0, 0, 0,0.2);
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-size: 1.2rem;
+   margin-top: -10%;
+   transform: translateY(-40px);
+   opacity: 700;
+   visibility: hidden;
+   transition: oll 0.5s ease;
+   cursor: pointer;
+}
 .ver:hover{
    background: #9a6b2d;
 }
+#news .container .content .box1{
+   color: #b48c56;
+   position: sticky;
+   top: 515px;
+   position: absolute;
+   text-decoration: #b48c56;
+}
+#news .container .content .box1 a{
+   color: #b48c56;
+}
+/*    BRANCH     */
 
 /*               HOME               */
 
@@ -283,7 +378,6 @@ text-decoration: none;
 #news .container .content .box{
    width: 77%;
    height: 5vh;
-   background:0 0 15px rgba(0, 0, 0,0.0);
    box-shadow: 0 4px 4px rgb(41, 39, 39);
    border-radius:5%;
    display: flex;
@@ -635,7 +729,7 @@ select{
 
 ul#album-fotos {
     width: 700px;
-    margin: 0 outo;
+    margin: 0 auto;
     padding: 50px;
     overflow: hidden;
     list-style: none;
@@ -737,50 +831,34 @@ ul#album-fotos li#foto06:hover{
     background-size: 100% 100%;
 }
 
-
-figure.foto-legenda img{
-   width: 200px;
-   height: 201px;
+#right table{
+   margin: 41px;
 }
-figure.foto-legenda h3{
-   font-size: 1.10rem;
-   margin-left: -77px;
-   color: #cc9752;
-}
-figure.foto-legenda p{
-   font-size: 0.1rem;
-   margin-left: -30px;
-   font-family: 'Courier New', Courier, monospace;
-}
-
 /* ---------formação de imagens com legenda --------pontus turisticos------*/
 figure.fotografia-legenda{
-   position: relative;
+   
    border: 8px solid white;
    box-shadow: 1px 1px 4px black;
-   margin: -40px 4px -64px 14px;
-   width: 257px;
-   margin: 1px;
+   margin: 4px;
+   width: 39vh;
+   
    float: left;
 }
 figure.fotografia-legenda img{
    width: 255px;
 }
 figure.fotografia-legenda figcaption{
-   left: 138px;
+   left: 167px;
    margin-top: 179px;
    opacity: 0;
    position: absolute;
-   top: -17px;
-   
+   top: 0px;
+   background-color: rgba(0, 0, 0, 0.4);
+   color: white;
    transition: opacity 1s;
 }
 figure.fotografia-legenda:hover figcaption{
    opacity: 1;
-}
-figure.fotografia-legenda:hover figcaption input[type="button"]{
-   color: #b48c56;
-   background-color: rgba(18, 10, 10, 4);
 }
  /*-----------------------publicação---------------*/
  main #right p{
@@ -885,7 +963,8 @@ form {
   width: 100%;
   font-size: 16px;
   box-sizing: border-box;
-   }
+}
+
    #btn-submit:hover {
   background-color: #9a6b2d;
 }
@@ -912,25 +991,13 @@ main input{
    width: 74%;
    float: left;
 }
-main input, main button {
+#busca {
   padding: 10px;
   margin: 4px 4px;
-  font-size: 16px;
-  flex-direction: column;
-}
-
-main button {
-  cursor: pointer;
-  background-color: #b48c56;
-  color: white;
-  border: none;
-  border-radius: 5px;
+  height: 14px;
   
 }
 
-main button:hover {
-  background-color: #9a6b2d;
-}
 
 input#procurar{
   cursor: pointer;
@@ -938,11 +1005,32 @@ input#procurar{
   color: white;
   border: none;
   border-radius: 5px;
+  padding: 10px 15px;
+  margin: 7px;
+  font-size: 1.1rem;
+  width: 100%;
 }
+
 input#procurar:hover{
    background-color: #9a6b2d;
 }
-
+#resresul{
+   margin: 4px;
+   width: 104%;
+   border-radius: 4px;
+}
+button#procurar{
+   width: 100%;
+   color: white;
+   background: #b48c56;
+   border: none;
+   padding: 10px 15px;
+   border-radius: 4px;
+   font-size: 1.1rem;
+}
+button#procurar:hover{
+   background-color: #9a6b2d;
+}
 /* -----------------Modal */
 .modal {
   display: none;
@@ -1061,15 +1149,17 @@ input#procurar:hover{
  /*             RESPONSIVE               */
 
  @media screen and (max-width: 1424px){
- 
-  header{
+    header{
      font-size: 0.0rem;
      height: 60px;
      top: -0%;
 }
-}
+
+ }
+ 
  @media screen and (max-width: 1024px) {
-  header .menu ul li{
+
+    header .menu ul li{
      padding: 0 15px;
   }
   header .menu ul li a{
@@ -1102,10 +1192,15 @@ input#procurar:hover{
      margin-bottom: -80px;
   }
 
-  ul#album-fotos {
-    width: 400px;
-   }
-
+ul#album-fotos {
+    width: 300px;
+    margin: 0 auto;
+    padding: 50px;
+    overflow: hidden;
+    list-style: none;
+    min-width: 100px;
+    position: absolute;
+}
    .fotografia-legenda{
       width: 400px;
    }
@@ -1114,7 +1209,6 @@ input#procurar:hover{
    margin: auto;
 }
 body {
-  
   background: #f0f8ff;
   background-size: cover;
   background-position: 150px;
@@ -1124,6 +1218,15 @@ body {
        right: 0px; 
        padding: 10%;
 }
+
+figure.fotografia-legenda{
+   border: 8px solid white;
+   box-shadow: 1px 1px 4px black;
+   margin: 4px;
+   width: 255px;
+   float: left;
+}
+
 #navigation{
        position: fixed;
        left: -710px; 
@@ -1147,6 +1250,8 @@ main input, main button {
   font-size: 16px;
   flex-direction: column;
 }
+ }
+ 
 
 @media screen and (max-width: 1024px){
 #news .container .content .box{
@@ -1209,6 +1314,26 @@ header .menu{
   cursor: pointer;
   font-size: 16px;
   margin-right: 84px;
+
+
+}
+header .menu-mobile ul li a{
+  text-decoration: none;
+  color: #e9bc81;
+  font-size: 1.3rem;
+  transition: all 0.3s ease;
+}
+/*as cores*/
+header .menu-mobile ul li a:hover{
+    transform: scale(1.1);
+    transform: rotateX('angle');
+   
+}
+
+header .btn{
+  display: block;
+  position: fixed;
+  right: 40px;
   
 }
 
@@ -1232,31 +1357,52 @@ header .menu{
 
 header .menu ul{
    padding: 10px;
+   float: left;
+   
 }
 header .menu ul li {
    list-style: none;
    padding: 10px 0;
    text-align: center;
    color: #000000;
+   
 }
+
+header .menu{
+  display: none;
+
+}
+header .menu ul li{
+   list-style: none;
+   text-align: center;
+   padding: 24px 1px;
+}
+header .menu ul li a{
+  font-family: 'Belleza', sans-serif;
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #b48c56;
+  float: left;
+  padding: 34px 15px;
+}
+  header .menu ul li a:hover {
+    transform: scale(1.1);
+    transform: rotateX('angle');
+
+  }
+  header .menu ul #ep{
+   color: #737373;
+  }
+
 
 header .menu ul li a{
    text-decoration: none;
-}
-
-header .menu ul button {
-   margin-left: 74px;
-   background: white;
-   border: none;
-   color: #b48c56;
-   padding: 20px 41px 14px 7px;
-   font-size: 1.3rem;
+   text-align: center;
 }
 
 /* Menu */
 .menu {
   display: none; /* começa escondido */
-  
   top: 60px;
   left: 1px;
   background: #222;
@@ -1273,7 +1419,6 @@ header .menu ul button {
 }
 
 .menu a:hover {
-   border-bottom: 14px;
     transform: scale(1.1);
     transform: rotateX('angle');
 }
@@ -1286,7 +1431,25 @@ header .menu ul button {
 }
 
 #cadastro .container .title{
-text-align: center;
+   text-align: center;
 }
 
+header .btn:hover .menu-mobile{
+   top: 0;
+   transform: translateY(0);
+   opacity: 1;
+   visibility: visible;
+}
+}
+ @media screen and (max-width: 430px) {
+   ul#album-fotos {
+    width: 300px;
+    margin: 0 auto;
+    padding: 44px;
+    overflow: hidden;
+    list-style: none;
+    min-width: 100px;
+    position: absolute;
+    margin-left: -28px;
+}
 }
