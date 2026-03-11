@@ -12,47 +12,48 @@ function submenu(){
   menu.style.display = 'none'
 }
 
-let primeiro = document.getElementById("prim")
-let segundo = document.getElementById("segu")
-let terceiro = document.getElementById("terc")
-let res = document.getElementById("resultado")
-let moda_contente = document.getElementById("modal-content")
-let fechar = document.querySelector(".close");
-let moda_texto = document.getElementById("modal-texto")
-fechar.onclick = () => { res.style.display = "none"; };
-window.onclick = e => { if (e.target == res) res.style.display = "none"; };
+//  ==================== SHOWS DETALHES//
+let aprofunda = document.getElementById('aprofunda')
+let destaque = document.getElementById("destaque")
+const show = document.getElementById("shows")
+const listaShows = document.getElementById("lista-shows")  
 
-primeiro.addEventListener('click', priclick)
-segundo.addEventListener('click', suclick)
-terceiro.addEventListener('click', teclck)
+let shows = [ 
+  { artista: "Coldplay", cidade: "São Paulo", data: "10/03/2026" }, 
+  { artista: "Imagine Dragons", cidade: "Rio de Janeiro", data: "12/03/2026" }, 
+  { artista: "Beyoncé", cidade: "Belo Horizonte", data: "15/03/2026" },
+  { artista: "Imagine Dragons", cidade: "Rio de Janeiro", data: "12/03/2026" },
+  { artista: "Beyoncé", cidade: "Belo Horizonte", data: "15/03/2026" }, 
+  { artista: "Imagine Dragons", cidade: "Rio de Janeiro", data: "12/03/2026" },
+  { artista: "Beyoncé", cidade: "Belo Horizonte", data: "15/03/2026" },
+  { artista: "Imagine Dragons", cidade: "Rio de Janeiro", data: "12/03/2026" },
+  { artista: "Imagine Dragons", cidade: "Rio de Janeiro", data: "12/03/2026" },
+  { artista: "Imagine Dragons", cidade: "Rio de Janeiro", data: "12/03/2026" },
+  { artista: "Imagine Dragons", cidade: "Rio de Janeiro", data: "12/03/2026" },
+  { artista: "Imagine Dragons", cidade: "Rio de Janeiro", data: "12/03/2026" }  
+] 
+ destaque.addEventListener('click', () =>{
+    show.style.color = 'black'
+    destaque.style.color = '#b48c56'
+    aprofunda.innerHTML = '<h1>Próximos Shows</h1><p id="line"></p>'
+    show.addEventListener('mouseenter', () =>{show.style.color = '#b48c56'})
+    show.addEventListener('mouseout', ()=>{show.style.color = 'black'})
+shows.forEach(show => { 
+  const div = document.createElement("div") 
+  div.classList.add('card') 
+  div.innerHTML = ` 
+    <div class="info"> 
+      <h3>${show.artista}</h3> 
+      <p>Cidade: ${show.cidade}</p> 
+      <p>Data: ${show.data}</p> 
+    </div> 
+  ` 
+  aprofunda.appendChild(div)
+}) 
+ })
+    
 
-function priclick(){
-  res.style.display = 'block'
-  moda_texto.innerHTML = `<h3>
-                        Matias Damasio. <br>
-                        <img src="imagen/Matias Damasio.jpg" ><br>
-                        Representando Angola em portugal e em muitos outros países lus&oacute;fonos...
-                    </h3>`
-  
-}
-
-function suclick(){
-  res.style.display = 'block'
-  moda_texto.innerHTML = `<h3>
-                       Serra da leba.<br> 
-                        <img src="imagen/montanha-serra-da-leba-Lubango-252.jpg" width="144px" height="147"><br>
-                        conciderado um dos melhores pontus turistico de Angola...</h3>`
-}
-
-function teclck(){
-  res.style.display = 'block'
-  moda_texto.innerHTML = `<h3>
-                        hotel-epic-sana<br> 
-                        <img src="imagen/hotel-epic-sana.jpg" alt=""><br>
-                        conciderado um hotel cinco estrelas...</h3>`
-}
-
-
+//   ==================== PONTOS TURÍSTICAOS   //
 function processar(){
     var txt = window.document.getElementById("resresul")
     var res = window.document.getElementById("resultados")
@@ -88,3 +89,5 @@ function processar(){
       }
     
   }
+
+  //   ==================== SOBRE   //

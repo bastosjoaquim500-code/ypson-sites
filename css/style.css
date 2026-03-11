@@ -23,27 +23,15 @@ header{
   background: #504f4f;
    position: fixed;
 }
-header h4{
-  background-color: #888888;
-  text-align: center;
-  text-shadow: none;
-  color: rgb(83, 72, 70);
-  border-radius: 4px;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 1.8rem;
-  height: 34px;
-  width: 147px;
-  cursor: pointer;
-}
 
 header h1{
   font-size: 1.8rem;
+  text-align: center;
   color: #b9833c;
   border: 8px solid #b9833c;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   border-radius: 14%;
-  text-align: center;
-  width: 48px;
+  width: 40px;
   height: 28px;
   cursor: context-menu;
 }
@@ -80,8 +68,7 @@ header .btn{
 #right p{
    font-family: 'Belleza', sans-serif;
    font-size: 1.3rem;
-   color: #737373;
-   margin-bottom: 12px;
+   color: black;
    margin-top: 4px;
 }
 #right h1{
@@ -105,31 +92,22 @@ header{
    z-index: 99;
 }
 
-header h4{
-  background-color: white;
+header h4 a{
+  background-color: #b9833c;
   text-align: center;
   text-shadow: none;
-  color: rgb(83, 72, 70);
+  padding: 5px 10px;
+  color: white;
   border-radius: 4px;
   font-family: 'Courier New', Courier, monospace;
-  font-size: 1.8rem;
+  font-size: 1.1rem;
   height: 34px;
   width: 60px;
   margin-right: 78px;
-  box-shadow: 4px 4px 8px rgba(82, 85, 87, 0.7);
+  text-decoration: none;
 }
 
-header h1{
-  font-size: 1.8rem;
-  color: #b9833c;
-  border: 8px solid #b9833c;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  border-radius: 14%;
-  text-align: center;
-  width: 48px;
-  height: 28px;
-  cursor: context-menu;
-}
+
 
 header .menu-desketop ul abbr{
   text-decoration: none;
@@ -151,7 +129,7 @@ header .menu-desketop ul li a{
   font-family: 'Belleza', sans-serif;
   text-decoration: none;
   font-size: 1.2rem;
-  color:rgb(84, 81, 81);
+  color:black;
   float: left;
   padding: 34px 15px;
 }
@@ -196,29 +174,7 @@ header .menu-btn{
    display: none;
 
 }
-/*                 ---inicio---              */
-nav a {
-    color: white;
-    margin-right: 10px;
-    text-decoration: none;
-}
-.post, .anuncio {
-    background: white;
-    padding: 10px;
-    margin: 10px;
-}
-.ver a {
-   text-decoration: none;
-   color: white;
-}
-.ver {
-    background: #b48c56;
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 5px;
-    cursor: pointer;
-}
+
  #news .container .content .box p{
    font-family: 'Times New Roman', Times, serif;
    font-size: 1.1rem;
@@ -255,76 +211,6 @@ nav a {
 }
 #news .container .content .box1 a{
    color: #b48c56;
-}
-/*    BRANCH     */
-
-/*               HOME               */
-
-#home .container{
-  background-size: 100% 100% ;
-}
-
-#home .container .content{
-  width: 50%;
-  align-items: center;
-  padding: 0 60px;
-}
-
-#home .container .content h1{
-font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-font: 2.5rem;
-font-weight: 600;
-letter-spacing: 10px;
-margin-top: 1px;
-margin-bottom: 40px;
-color: #302725;
-}
-
-#home .container .content p{
-  font-family: 'Belleza', sans-serif;
-  font-size: 1.3rem;
-  color: #737373;
-  margin-bottom: 12px;
-  margin-top: 4px;
-}
-
-#home .container .content span{
-  font-size: 2.5rem;
-  font-family: 'Babas Neue', cursive;
-  color: #b48c56;
-  letter-spacing: 5px;
-}
-
-#home .container .content .button{
-  padding-top: 4px;
-}
-#home .container .content .button button{
-  padding: 10px 20px;
-  border: none;
-  background: #b48c56;
-  color: #f0f8ff;
-  font-family: 'Belleza', sans-serif;
-  font-size: 1.2rem;
-  cursor: pointer;
-  transform: all 0.5s ease;
-  border-radius: 4px;
-}
-
-#home .container .content .button button:hover{
-  background: #9a6b2d;
-}
-
-#home .container .content button.btn2{
-  background: #302725;
-  padding: 15px 20px;
-  position: relative;
-  right: 5px;
-}
-
-#home .container .content button a{
-color: white;
-text-decoration: none;
-
 }
 
 
@@ -485,10 +371,192 @@ text-decoration: none;
    color: #b48c56;
 }
 
+/*                 ---inicio---              */
+nav a {
+    color: white;
+    margin-right: 10px;
+    text-decoration: none;
+}
+.post, .anuncio {
+    background: white;
+    padding: 10px;
+    margin: 10px;
+}
+.ver a {
+   text-decoration: none;
+   color: white;
+}
+.ver {
+    background: #b48c56;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
 
 
+/*               --------HOME de shows----------               */
 
-/*                 ---Cadastro---              */
+#home .container{
+  background-size: 100% 100% ;
+}
+
+#home .container .content{
+  width: 50%;
+  align-items: center;
+  padding: 0 60px;
+}
+
+#home .container .content h1{
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font: 2.5rem;
+font-weight: 600;
+letter-spacing: 10px;
+margin-top: 1px;
+margin-bottom: 40px;
+color: #b48c56;
+}
+
+#home .container .content p{
+  font-family: 'Belleza', sans-serif;
+  font-size: 1.3rem;
+  color: #737373;
+  margin-bottom: 12px;
+  margin-top: 4px;
+}
+
+#home .container .content span{
+  font-size: 2.5rem;
+  font-family: 'Babas Neue', cursive;
+  color: #b48c56;
+  letter-spacing: 5px;
+}
+
+#home .container .content .button{
+  padding-top: 4px;
+}
+#home .container .content .button button{
+  padding: 10px 20px;
+  border: none;
+  background: #b48c56;
+  color: #f0f8ff;
+  font-family: 'Belleza', sans-serif;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transform: all 0.5s ease;
+  border-radius: 4px;
+}
+
+#home .container .content .button button:hover{
+  background: #9a6b2d;
+}
+
+#home .container .content button.btn2{
+  background: #302725;
+  padding: 15px 20px;
+  position: relative;
+  right: 5px;
+}
+
+#home .container .content button a{
+color: white;
+text-decoration: none;
+
+}
+
+/*    BRANCH   index  */
+
+#branch .container{
+   background: #f0f8ff;
+   background-size:  100% 100%;
+}
+
+#branch .container .title{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   padding-top: 60px;
+}
+
+#branch .container .line{
+   width: 150px;
+   height: 2px;
+   background: #b48c56;
+}
+
+#branch .container .title h1{
+   font-family: 'Arial', cursive;
+   font-size: 2rem;
+   font-weight: 200;
+   text-transform: uppercase;
+   letter-spacing: 15px;
+   margin-top: 20px;
+}
+
+#branch .container .content{
+   width: 100%;
+   height: 90vh;
+   display: flex;
+   justify-content: space-evenly;
+}
+
+#branch .container .content .box{
+   width: 25%;
+   height: 60vh;
+   background: white;
+   border-radius: 20px;
+   box-shadow: 4px 4px 8px rgba(82, 85, 87, 0.7);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   margin-top: 40px;
+}
+
+#branch .container button abbr{
+   text-decoration: none;
+}
+
+#branch .container .box img{
+   width: 200px;
+}
+
+#branch .container .box h1{
+   font-size: 2rem;
+   font-family: 'belleza', sans-serif;
+   font-weight: 200;
+   text-transform: uppercase;
+   letter-spacing: 5px;
+   margin-top: 20px;
+}
+
+#branch .container .box button{
+   padding: 10px 20px;
+   border: none;
+   background: #b48c56;
+   color: #f0f8ff;
+   font-family: 'belleza', sans-serif;
+   font-size: 1.2rem;
+   margin-top: 50px;
+   cursor: pointer;
+   transform: translate(-40px);
+   opacity: 0;
+   visibility: hidden;
+   transition: all 0.5s ease;
+   border-radius: 8px;
+}
+#branch .container .box button:hover {
+ background: #9a6b2d;
+}
+#branch .container .box:hover button{
+   transform: translate(0);
+   opacity: 1;
+   visibility: visible;
+}
+
+/*Cadastro dos SHOWS */
 #cadastro .container {
   background-color: #f0f8ff;
   
@@ -589,7 +657,7 @@ text-decoration: none;
   transform: all 0.5s ease;
 }
 
-/*    publicaç&atilde;o  */
+/*    publicação  */
 #registra-te{
    text-align: center;
    margin-top: 58px;
@@ -622,110 +690,44 @@ footer{
   text-align: center;
  }
  
- /*    BRANCH   index  */
-
-#branch .container{
-   background: #f0f8ff;
-   background-size:  100% 100%;
+ 
+/* ---------         Pontus Turisticos           ---------------------*/
+section#pdestaque{
+   position: relative;
+   margin: 10vh 10vh 44vh 0vh;
+}
+section#pdestaque h1{
+   text-align: center;
 }
 
-#branch .container .title{
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   flex-direction: column;
-   padding-top: 60px;
-}
-
-#branch .container .line{
-   width: 150px;
-   height: 2px;
+section#pdestaque .pline{
+   height: 1px;
+   width: 18%;
+   text-align: center;
    background: #b48c56;
-}
-
-#branch .container .title h1{
-   font-family: 'Arial', cursive;
-   font-size: 2rem;
-   font-weight: 200;
-   text-transform: uppercase;
-   letter-spacing: 15px;
-   margin-top: 20px;
-}
-
-#branch .container .content{
-   width: 100%;
-   height: 90vh;
-   display: flex;
-   justify-content: space-evenly;
-}
-
-#branch .container .content .box{
-   width: 25%;
-   height: 60vh;
-   background: white;
-   border-radius: 20px;
-   box-shadow: 4px 4px 8px rgba(82, 85, 87, 0.7);
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   flex-direction: column;
-   margin-top: 40px;
-}
-
-#branch .container button abbr{
-   text-decoration: none;
-}
-
-#branch .container .box img{
-   width: 200px;
-}
-
-#branch .container .box h1{
-   font-size: 2rem;
-   font-family: 'belleza', sans-serif;
-   font-weight: 200;
-   text-transform: uppercase;
-   letter-spacing: 5px;
-   margin-top: 20px;
-}
-
-#branch .container .box button{
-   padding: 10px 20px;
-   border: none;
-   background: #b48c56;
-   color: #f0f8ff;
-   font-family: 'belleza', sans-serif;
-   font-size: 1.2rem;
-   margin-top: 50px;
+   margin-left: 41%;
+}section#pdestaque figcaption input{
+   background-color: #b48c56;
    cursor: pointer;
-   transform: translate(-40px);
-   opacity: 0;
-   visibility: hidden;
-   transition: all 0.5s ease;
-   border-radius: 8px;
-}
-#branch .container .box button:hover {
- background: #9a6b2d;
-}
-#branch .container .box:hover button{
-   transform: translate(0);
-   opacity: 1;
-   visibility: visible;
-}
-/* ---------         Pontus Turisticos*/
-
-
-select{
-   width: 144px;
-   color: #b48c56;
-   margin-top: 14px;
-   width: 271px;
-   height: 37px;
    border: none;
-   font-size: 1.4rem;
+   padding: 7px 1px;
+   color: white;
+   font-size: 1.0rem;
+}
+section#pdestaque figcaption input:hover{
+   background: #9a6b2d;
+}
+/* ---------formação de imagens com legenda--------    */
+figure.fotografia-legenda{
+   border: solid 8px white;
+   float: left;
+}
+figure.fotografia-legenda img{
+   width: 255px;
+   height: 215px;
 }
 
-/* ---------formação de imagens com legenda          Hotel e ospedaria*/
+/* ---------          Hotel e ospedaria          -------------------------*/
 
 ul#album-fotos {
     width: 700px;
@@ -834,32 +836,7 @@ ul#album-fotos li#foto06:hover{
 #right table{
    margin: 41px;
 }
-/* ---------formação de imagens com legenda --------pontus turisticos------*/
-figure.fotografia-legenda{
-   
-   border: 8px solid white;
-   box-shadow: 1px 1px 4px black;
-   margin: 4px;
-   width: 39vh;
-   
-   float: left;
-}
-figure.fotografia-legenda img{
-   width: 255px;
-}
-figure.fotografia-legenda figcaption{
-   left: 167px;
-   margin-top: 179px;
-   opacity: 0;
-   position: absolute;
-   top: 0px;
-   background-color: rgba(0, 0, 0, 0.4);
-   color: white;
-   transition: opacity 1s;
-}
-figure.fotografia-legenda:hover figcaption{
-   opacity: 1;
-}
+
  /*-----------------------publicação---------------*/
  main #right p{
   margin: -10px;
@@ -882,7 +859,77 @@ figure.fotografia-legenda:hover figcaption{
     height: 28px;
     cursor: context-menu;
 }
-   /*-------------------main-container-------publicação-------------------*/
+
+/*===========================EXPLORAR=====================*/
+#explorar{
+   margin-top: 12vh;
+}
+#explorar article{
+   padding: 14px;
+   margin-left: 1vh;
+   font-size: 1.2rem;
+}
+#explorarmais{
+   margin-top: -14vh;
+}
+div#midia figcaption {
+   background: #ffffff; 
+position: -ms-page;
+border-radius: 12px;
+margin-top: 14vh;
+min-width: 44vh; 
+overflow: hidden;
+float: left;
+margin: 4px;
+}
+div#midia figcaption img{
+   width: 37ch;
+}
+/* Card do show */ 
+.des { 
+background: #ffffff; 
+position: -ms-page;
+border-radius: 12px;
+margin-top: 14vh;
+min-width: 44vh; 
+overflow: hidden;
+float: left;
+margin: 4px;
+box-shadow: 0 5px 15px rgba(0,0,0,0.3); 
+transition: transform 0.3s, box-shadow 0.3s; 
+cursor: pointer; 
+} 
+/* Efeito hover */ 
+.des:hover { 
+transform: translateY(-5px); 
+box-shadow: 0 10px 25px rgba(0,0,0,0.5); 
+} 
+/* Imagem do show */ 
+.des img { 
+width: 100%; 
+height: 160px; 
+object-fit: cover; 
+transition: transform 0.3s; 
+} 
+.des:hover img { 
+transform: scale(1.05); 
+} 
+/* Informações do show */ 
+.des .info { 
+  padding: 15px;
+} 
+ 
+.des .info h3 { 
+  margin-bottom: 10px; 
+  color: #b48c56; 
+} 
+ 
+.des .info p { 
+  margin-bottom: 5px; 
+  color: #000; 
+  font-size: 14px; 
+}
+   /*===========================MAIN-CONTAINER==========ENTRAR=====================*/
 #main-container {
    background: #f0f8ff;
     top: 60px; 
@@ -1031,7 +1078,158 @@ button#procurar{
 button#procurar:hover{
    background-color: #9a6b2d;
 }
-/* -----------------Modal */
+/*  ----------Detahles de Shows*/
+#sec1{
+   margin-top: 54px;
+}
+img#imgShows{
+   border-radius: 8px;
+   margin-top: 9px;
+   margin-left: 17vh;
+   width: 37vh;
+}
+nav#secDS1{
+   background-color: white;
+   margin-top: 4vh;
+}
+div#texDS{
+  float: right;
+  margin-right: 70vh;
+  padding: 7px;
+}div#texDS p{
+   padding: 4px;
+}
+#links ul li{
+   float: left;
+   margin-left: 17vh;
+   text-decoration: none;
+   background: #f0f8ff;
+   cursor: pointer;
+}
+#links li:hover{
+   color: #b48c56;
+}
+li#shows{
+   color: #b48c56;
+   padding: 5px;
+   border: solid 1px #000;
+   border-top: none;
+   border-left: none;
+   border-right: none;
+}
+#destaque{
+  padding: 5px;
+   border: solid 1px #000;
+   border-top: none;
+   border-left: none;
+   border-right: none;
+}
+#links{
+   background: #f0f8ff;
+   padding: 11px;
+}
+#sec2{
+   background: white;
+}
+#aprofunda{
+   margin-left: 17vh;
+   background: white;
+}
+#aprofunda h1{
+   color: #b48c56;
+}
+
+ul#ul{
+   padding: 4px;
+}
+ul#ul ul{
+   margin-left: 10vh;
+}
+/* Card do show */ 
+.card { 
+background: #ffffff; 
+position: -ms-page;
+border-radius: 12px;
+margin-top: 14vh;
+min-width: 44vh; 
+overflow: hidden;
+float: left;
+margin: 4px;
+box-shadow: 0 5px 15px rgba(0,0,0,0.3); 
+transition: transform 0.3s, box-shadow 0.3s; 
+cursor: pointer; 
+} 
+/* Efeito hover */ 
+.card:hover { 
+transform: translateY(-5px); 
+box-shadow: 0 10px 25px rgba(0,0,0,0.5); 
+} 
+/* Imagem do show */ 
+.card img { 
+width: 100%; 
+height: 160px; 
+object-fit: cover; 
+transition: transform 0.3s; 
+} 
+.card:hover img { 
+transform: scale(1.05); 
+} 
+/* Informações do show */ 
+.card .info { 
+  padding: 15px;
+} 
+ 
+.card .info h3 { 
+  margin-bottom: 10px; 
+  color: #b48c56; 
+} 
+ 
+.card .info p { 
+  margin-bottom: 5px; 
+  color: #000; 
+  font-size: 14px; 
+} 
+p#line{
+   height: 1px;
+   width: 87%;
+   background: #000;
+}
+
+
+/* ============================SOBRE============================ */
+section#sobre{
+   margin-top: 14vh;
+}
+
+section#sobre article{
+   padding: 14px;
+   margin-left: 11px;
+   font-size: 1.4rem;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Sans', Arial, sans-serif;
+   cursor: pointer;
+}
+#sobrepr img{
+   height: 44vh;
+   border-radius: 4px;
+}
+div#sline{
+   height: 1px;
+   width: 37vh;
+   background: #000;
+   margin-left: 14px;
+}
+#txtinfo{
+   float: right;
+   top: -48vh;
+   margin-right: 4px;
+   position: relative;
+   margin-left: 44vh;
+}
+section#sobrepr{
+   margin-top: -84px;
+}
+
+/* ============================MODAL============================ */
 .modal {
   display: none;
   position: fixed;
@@ -1185,7 +1383,10 @@ button#procurar:hover{
      width: 88%;
      height: 46vh;
   }
-
+header h1{
+margin-left: -181px;
+position: static;
+}
   #branch .container .box img{
      width: 188px;
      height: 38vh;
@@ -1218,7 +1419,10 @@ body {
        right: 0px; 
        padding: 10%;
 }
-
+section#pdestaque{
+   position: relative;
+   margin: 0vh 0vh 118vh 0vh;
+}
 figure.fotografia-legenda{
    border: 8px solid white;
    box-shadow: 1px 1px 4px black;
@@ -1301,6 +1505,18 @@ header .menu{
    left: 7;
    right: 14;
    box-shadow: 4px 4px 8px rgba(82, 85, 87, 0.7);
+   
+    animation: mySlide;
+    animation-play-state: running;
+    animation-iteration-count: 1;
+    animation-delay: 0s;
+    animation-timing-function: linear;
+    animation-duration: 0.2s;
+}
+@keyframes mySlide{
+    from{margin-left: -21%;}
+    to{margin-right: 0%;}
+
 }
 #btnMenu{
    display: block;
@@ -1350,6 +1566,18 @@ header .btn{
   font-size: 16px;
   margin: 11px 4px 7px 39px;
   width: 14px;
+
+      animation: mySlide;
+    animation-play-state: running;
+    animation-iteration-count: 1;
+    animation-delay: 0s;
+    animation-timing-function: linear;
+    animation-duration: -147s;
+}
+@keyframes mySlide{
+    from{margin-left: -21%;}
+    to{margin-right: 0%;}
+
 }
 .submenu-btn:hover{
    background: #9a6b2d;

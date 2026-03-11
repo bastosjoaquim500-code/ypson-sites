@@ -30,9 +30,12 @@
             <ul>
                 <li><a href="início.html">Home</a></li>
                 <li><a href="index.html">Shows</a> </li>
-                <li><a href="#" id="ep">Turismo</a></li>
+                <li><a href="Hotel e ospedaria.html" id="ep">Turismo</a></li>
                 <li><a href="Hotel e ospedaria.html">Hotéis</a></li>
-                <li><a href="publicação.html">Entrar</a></li>
+                <li><a href="explorar.html">Explorar</a></li>
+                <li><a href="publicação.html">Publicar</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                
             </ul>
         </div>
         <nav id="menu" class="menu">
@@ -40,15 +43,16 @@
             <ul>
                 <li><a href="início.html">Home</a></li>
                 <li><a href="index.html">shows</a> </li>
-                <li><a href="#" id="ep">Turismo</a></li>
+                <li><a href="Hotel e ospedaria.html" id="ep">Turismo</a></li>
                 <li><a href="Hotel e ospedaria.html">Hotéis</a></li>
-                <li><a href="publicação.html">Entrar</a></li>
+                <li><a href="explorar.html">Explorar</a></li>
+                <li><a href="publicação.html">Publicar</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
 
             </ul>
         </nav> 
-        <h4>ao</h4>
+        <h4><a href="entrar.html">Entrar</a></h4>
     </header>
-       <div id="awn-z10736098"></div>
  <!--      News       -->
  <div id="navigation" >
     <section id="news">
@@ -66,7 +70,7 @@
                         <img src="imagen/Matias Damasio.jpg" ><br>
 
                         Representando Angola em portugal e em muitos outros países lus&oacute;fonos...</h3>
-                    <button id="prim">Ver mais</button>
+                    <button id="prim"><a href="Shows.html">Ver mais</a></button>
 
                 </div>
                 <div class="box">  <h1></h1>
@@ -96,11 +100,26 @@
       </section>
     </div>
                 <!-- --><section id="right">
-   <h1>Turismo</h1>
-    <p>Angola. E nesta página verás os principas pontos turísticos de Angola, e temb&eacute;m verás detalhe por detalhes
-         os pontos turisticos que há em Angola e em cada província.</p>
-        
-                    
+<section id="home">
+    <div class="container">
+        <div class="content">
+            <div class="call">
+                <h1>Turismo</h1>
+    <p>Nesta página verás os melhores pontos turísticos de Angola, entre os mais visitados e os mais considerados,
+         Angola um dos países mais visitados de África e que apresenta varios pontus turisticos naturais, 
+         entre animais e outos, vejá os melhores pontus turísticos de Angola e disside qual tu queres visitar.</p>
+        <div class="button"><button><a href="#pdestaque">Mostrar Agora</a></button> </div>
+        <p>Localisa os melhores pontus turisticos de Angola e veja os hoteis mais frequentados,
+            e nos detalhes poderas setisfaser os teus entereses de turismo em Angola,
+            e seras mais informado com base a sua pesquisa </p>
+            <div class="button"><button><a href="#pdestaque">Mostrar Agora</a></button> </div>
+        </div>
+        </div>
+    </div>
+</section>  
+<section id="pdestaque">
+    <div class="pline"></div>
+    <h1>Destaque</h1>
                         <figure class="fotografia-legenda">
                     <img src="imagen/arvore-c.jpg">
                     <figcaption>
@@ -120,13 +139,12 @@
                     <figure class="fotografia-legenda">
                     <img src="imagen/montanha--verde.jpg">
                      <figcaption>
-                        <h3>ver detalhes</h3>
+                        <input type="button" value="saber mais">
                     </figcaption>
                     </figure>
-                    
-       
-                    
-<div id="province"></div>
+</section> 
+       <section id="hlocali">
+<p>Explora as Províncias que tu desejas Faser turísmo e comenta os destaques que tu gostares</p>
 <select name="province" id="resresul">
             <option value="">Cunene</option>
             <option value="Luanda">Luanda</option>
@@ -140,19 +158,18 @@
           </select><br>
 <button id="procurar" onclick="processar()">Procurar</button>
 <div id="resultados">
-   <p>Cunene classificado como a provincia com mais pontus turísticos de Angola,
-     &eacute; o mais destacado este ano apresenta mais de 14 belezas naturais, &eacute; 
-     a província mas consegrada em todos os anos, lá est&atilde;o os seguintes pontus 
-     turisticos<br>mais visitados:</p>
+   <p>Cunene referencia de muitos turistas por apresetar varis pontos maravilhosos,
+     &eacute; uma das províncias mais visitada de Angola, aprecia as belesas naturais e 
+     que lá tem e marca já uma visita.
+</p>
 </div>
 
 <img src="imagen/montanha-serra-da-leba-Lubango-252.jpg" width="211px" height="211px">
 <img src="imagen/avestros.jpg" alt="">
  <img src="imagen/walwitcha.jpg">
-
-
-</table>
-
+<h3>pesquisa o nome de um ponto turísticos</h3>
+<p><input type="text" name="nome" id="nome"><input type="button" value="pesquisar"></p>
+</section>
 
 </section>
     <script src="js/script.js"></script>
